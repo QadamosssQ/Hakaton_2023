@@ -1,0 +1,86 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorium wynalazcy</title>
+    <link rel="icon" href="../hackathon/img/icon.ico" type="image/x-icon">
+    <script type="importmap">
+                {
+                    "imports": {
+                        "SQAURE": "./script/Square.js",
+                        "GAME": "./script/Game.js",
+                        "INDEX": "./script/index.js",
+                        "SLIDER": "./script/classes/Slider.js",
+                        "OBJECT": "./script/classes/Object.js",
+                        "MAZE": "./script/classes/MAZE.js"
+                    }
+                }
+            </script>
+        
+</head>
+<div class="inputs">
+    <h2>Sterowanie</h2>
+    <p>zmień poziom: ⬅️/➡️</p>
+    <p>Wybierz: ENTER</p>
+</div>
+<canvas></canvas>
+<script src="./script/index.js" type="module"></script>
+<div class="level">
+    <div class="lvl1">
+    <p>Szanowny Odkrywco,</p>
+       <p>Cieszę się, że zdecydowałeś się podjąć wyzwanie skonstruowania pierwszego prototypu samolotu. Jestem pewien, że Twoje starania przyniosą owocne rezultaty. </p> 
+       <p>Wszystkiego dobrego w Twojej podróży ku nieskrępowanemu niebu! </p>
+       <p> Z poważaniem,</p>
+       <p>Leonardo da Vinci</p>
+    </div>
+    <div class="lvl2">
+        <p>Chciałbym serdecznie podziękować za niezwykłą pracę, którą wykonaliście. Wasze poświęcenie, zaangażowanie i nieustający wysiłek przekładają się na imponujące osiągnięcia. Wasza praca jest nie tylko znacząca, ale również inspirująca.</p> 
+
+<p>Dziękuję Ci za Waszą nieocenioną pracę.</p>
+
+<p>Z poważaniem,Leonardo</p>
+    </div>
+    <div class="lvl3">
+        <p>Szanowny Panie</p>
+
+<p>W naszym laboratorium, straciłem ważne części bomby atomowej. Proszę o pomoc w ich odnalezieniu w labiryncie naszego laboratorium. Proszę o szybką reakcję i kontakt, aby omówić, jak możecie pomóc w tej krytycznej sytuacji.</p>
+
+<p>Z poważaniem,</p>
+<p>Dr. Robert Oppenheimer</p>
+    </div>
+    <div class="lvl4">
+        <p>problem rozwiązał się sam</p>
+        <p>Dr. Robert Oppenheimer</p>
+    </div>
+</div>
+<style>
+    body {
+        margin: 0;
+    }
+    canvas{
+        image-rendering:pixelated ;
+        padding:0px;margin:0px;
+        width: 100vw;
+        height: 100vh;
+
+    }
+    .inputs{
+        position: absolute;
+        z-index: 10;
+        color: white;
+        left: 20px;
+        top: 10px;
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 10%;
+    }
+    .level{
+        z-index: 20;
+        display:none;
+        color: black;
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 250px;
+        font-size: 28px;
+        
+    }
+</style>
